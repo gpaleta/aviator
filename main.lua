@@ -24,7 +24,7 @@ function love.load()
     love.window.setMode(320,480,{resizable = false})
     love.window.setTitle("aviator")
     background = love.graphics.newImage("imagens/background.png")
-    img = love.graphics.
+    aviao.img = love.graphics.newImage(aviao.src)
 end
 function love.update(dt)
     if love.keyboard.isDown("w","s","a","d")then
@@ -34,5 +34,5 @@ function love.update(dt)
 end
 function love.draw()
     love.graphics.draw(background,0,0)
-    love.graphics.draw(aviao.ima)
+    love.graphics.draw(aviao.img,aviao.x,aviao.y)
 end
