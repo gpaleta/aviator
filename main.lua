@@ -3,7 +3,7 @@ ALTURA_TELA = 755
 MAX_METEOROS = 35
 
 aviao_14bis = {
-    src = "imagens/14bis.png",
+    src = "img/14bis.png",
     largura = 64,
     altura = 64,
     x = LARGURA_TELA/2 - 64/2,
@@ -58,9 +58,9 @@ function love.load()
 
     math.randomseed(os.time())
 
-    background = love.graphics.newImage("imagens/fundo.png")
+    background = love.graphics.newImage("img/fundo.png")
     aviao_14bis.imagem = love.graphics.newImage(aviao_14bis.src)
-    meteoro_img = love.graphics.newImage("imagens/meteoro.png")
+    meteoro_img = love.graphics.newImage("img/meteoro.png")
 end
 
 function love.update(dt)
